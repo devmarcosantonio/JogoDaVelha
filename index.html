@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Jogo da velha</title>
+</head>
+<body onload="loaded_placar()">
+    <header>
+        <h1>Jogo da velha</h1>
+        <button class="btn_reset" onclick="resetar()">Resetar pontos</button>
+    </header>
+    
+
+    <div class="tabuleiro">
+        <div class="square 0" onclick="clicked(this)"></div>
+        <div class="square 1" onclick="clicked(this)"></div>
+        <div class="square 2" onclick="clicked(this)"></div>
+        <div class="square 3" onclick="clicked(this)"></div>
+        <div class="square 4" onclick="clicked(this)"></div>
+        <div class="square 5" onclick="clicked(this)"></div>
+        <div class="square 6" onclick="clicked(this)"></div>
+        <div class="square 7" onclick="clicked(this)"></div>
+        <div class="square 8" onclick="clicked(this)"></div>
+    </div>
+
+    <div class="placar">
+        <h2>X</h2>
+        <div id="pontosX"></div>
+
+        <h2>O</h2>
+        <div id="pontosO"></div>
+    </div>
+
+    <footer>
+        <span>&copy; Desenvolvido por Marcos Antonio</span>
+        <section class="social">
+            <a href="https://github.com/devmarcosantonio" target=”_blank” rel=”external”><img src="img/icon-github.svg"></a>
+            <a href="https://www.linkedin.com/in/marcos-antonio-07019a233" target=”_blank” rel=”external”><img src="img/icon-linkedin.svg"></a>
+            <a href="mailto:marcosjr2001dev@gmail.com" target=”_blank” rel=”external”><img src="img/icon-gmail.svg"></a>
+            <a href="https://wa.me/5598992337497"target=”_blank” rel=”external”><img src="img/icon-whatsapp.svg"></a>
+        </section>
+    </footer>
+</body>
+</html>

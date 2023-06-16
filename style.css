@@ -1,0 +1,117 @@
+* {
+    margin: 0px; padding: 0px;
+}
+
+body {
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    
+    height: 100vh;
+    gap: 30px;
+}
+
+header {
+    display: flex;
+    justify-content:center;
+    gap: 80px;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.btn_reset {
+    background-color: brown;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+    color: white
+}
+
+.btn_reset:hover {
+    background-color: rgb(116, 31, 31);
+}
+
+
+h1 {
+    text-align: center;
+    color: rgb(95, 3, 95);
+}
+
+.tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-columns: repeat(3, 100px);
+    justify-content: center;
+    gap: 5px;
+    margin: auto;
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+    
+    background-color: rgb(95, 3, 95);
+    height: 100px;
+    color: white;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.square:hover {
+    background-color: rgb(54, 1, 54);
+}
+
+.placar {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    gap: 0 20px;
+    justify-content: center;
+}
+
+.placar > h2 {
+    text-align: center;
+    background-color: rgb(95, 3, 95);
+    color: white;
+    padding: 4px;
+    border-radius: 5px 5px 0 0;
+
+}
+
+#pontosX, #pontosO {
+    grid-row: 2;
+    height: 35px;
+    border: 5px solid rgb(95, 3, 95);
+    border-radius: 0 0 5px 5px;
+    color: rgb(95, 3, 95);
+    font-weight: bolder;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 15px;
+    font-style: italic;
+    color: white;
+    background-color: rgba(54, 1, 54, 0.528);
+    justify-self: flex-end;
+    padding: 20px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px
+}
